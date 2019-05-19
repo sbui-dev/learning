@@ -7,7 +7,3 @@ func main() {
 	hand.print()
 	remainingDeck.print()
 }
-
-func newCard() string {
-	return "Five of Diamonds"
-}
