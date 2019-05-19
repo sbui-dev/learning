@@ -12,7 +12,7 @@ import (
 // Create a new type of deck which is a slice of strings
 type deck []string
 
-// create a new deck of playing cards
+// Create a new deck of playing cards
 func newDeck() deck {
 	cards := deck{}
 	cardSuits := []string{"Spades", "Hearts", "Diamonds", "Clubs"}
@@ -39,7 +39,7 @@ func newDeckFromFile(filename string) deck {
 	return deck(s)
 }
 
-// Deals
+// Deals a hand of size specified
 func deal(d deck, handSize int) (deck, deck) {
 	return d[:handSize], d[handSize:]
 }
